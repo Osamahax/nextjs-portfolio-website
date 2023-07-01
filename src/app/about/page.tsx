@@ -5,15 +5,14 @@ import linkedin from "@/components/images/linkedin.svg";
 import github from "@/components/images/github.svg";
 import instagram from "@/components/images/instagram.svg";
 import heroImage from "@/components/images/myimg.jpg";
+import Button from "@/components/shared/Button";
+import Heading from "@/components/shared/Heading";
 
 const About = () => {
   return (
     <section className="px-16 lg:px-32 mt-10 ">
-      <div className="flex flex-col justify-center items-center text-4xl font-bold">
-        About Me
-        <span className="mt-2 w-28 h-0.5 bg-green-600 animate-ping"></span>
-      </div>
-      <div className="mt-20 flex flex-col justify-center items-center lg:flex-row lg:justify-around">
+      <Heading title="About Me"/>
+      <div className="mt-20 flex flex-col justify-center items-center lg:flex-row lg:justify-around gap-4">
         {/*Img dev */}
         <div className="lg:w-full flex justify-center">
           <Image
@@ -57,9 +56,7 @@ const About = () => {
               </h1>
             </div>
             <div className="flex flex-col  md:flex-row md:items-center mt-4 gap-4">
-              <button className="bg-green-700 py-2 px-10 rounded-3xl w-fit">
-                Download CV
-              </button>
+              <Button title="Download CV"/>
               <div className="flex items-center gap-2">
                 <span className="w-10 h-0.5 bg-gray-400"></span>
                 <Image src={twitter} alt="twtter" width={24} />

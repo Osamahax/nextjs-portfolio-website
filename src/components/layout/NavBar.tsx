@@ -22,7 +22,7 @@ const NavBar =()=>{
                 <CustomLink href="/about" title="About" className=""/>
                 <CustomLink href="/project" title="Projects" className=""/>
                 <CustomLink href="/skills" title="Skills" className=""/>
-                <CustomLink href="/contacts" title="Contacts" className=""/>
+                <CustomLink href="/contact" title="Contacts" className=""/>
             </nav>
         </header>
     )
