@@ -9,6 +9,7 @@ import Image from "next/image";
 const Contact = () => {
   return (
     <section className="px-16 lg:px-32 py-20">
+      <h1 className="text-center text-gray-400">Feel free to contact me anytimes</h1>
       <Heading title="Get in Touch" />
       <div className="mt-20 flex flex-col gap-6 lg:flex-row md:gap-10 justify-center">
         <div className="flex flex-col gap-6 text-lg w-1/2">

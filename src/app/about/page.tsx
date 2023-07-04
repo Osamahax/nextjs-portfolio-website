@@ -11,6 +11,7 @@ import Heading from "@/components/shared/Heading";
 const About = () => {
   return (
     <section className="px-16 lg:px-32 mt-10 ">
+      <h1 className="text-center text-gray-400">Get to know me</h1>
       <Heading title="About Me"/>
       <div className="mt-20 flex flex-col justify-center items-center lg:flex-row lg:justify-around gap-4">
         {/*Img dev */}
