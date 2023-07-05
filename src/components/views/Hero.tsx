@@ -1,8 +1,5 @@
 "use client";
 import Image from "next/image";
-import heroImg from "../images/hat_tie.jpeg";
-import { motion } from "framer-motion";
-import { TypeAnimation } from "react-type-animation";
 import LogoSection from "./LogoSection";
 import hiremeImg from "@/components/images/logo2.svg"
 import Mainheading from "./MainHeading";

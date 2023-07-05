@@ -31,15 +31,15 @@ const About = () => {
           <div className="border-b-2 border-gray-700 pb-6">
             <h4 className="text-green-400 text-lg">Who am i?</h4>
             <h1 className="text-3xl font-bold pt-3">
-              {`I'm Osama Malik, a Web Designer and Web Developer`}
+              I&apos;m Osama Malik, a Web Designer and Web Developer
             </h1>
             <p className="pt-4">
-              {`I am a developer based in the Pakistan and i have been building
+              I am a developer based in the Pakistan and i have been building
               noteworthy UX/UI designs and websites for years, which comply with
               the latest design trends. I help convert a vision and an idea into
               meaningful and useful products. Having a sharp eye for product
               evolution helps me prioritize tasks, iterate fast and deliver
-              faster.`}
+              faster.
             </p>
           </div>
           <div className="mt-4">
