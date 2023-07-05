@@ -21,7 +21,7 @@ const NavBar =()=>{
                 <CustomLink href="/" title="Home" className=""/>
                 <CustomLink href="/about" title="About" className=""/>
                 <CustomLink href="/project" title="Projects" className=""/>
-                <CustomLink href="/skills" title="Skills" className=""/>
+                <CustomLink href="/services" title="Services" className=""/>
                 <CustomLink href="/contact" title="Contacts" className=""/>
             </nav>
         </header>

@@ -7,9 +7,14 @@ import instagram from "@/components/images/instagram.svg";
 import heroImage from "@/components/images/myimg.jpg";
 import Button from "@/components/shared/Button";
 import Heading from "@/components/shared/Heading";
+import LogoSection from "@/components/views/LogoSection";
+import Link from "next/link";
+import TransitionEffect from "@/components/views/TransitionEffect";
 
 const About = () => {
   return (
+    <>
+    <TransitionEffect />
     <section className="px-16 lg:px-32 mt-10 ">
       <h1 className="text-center text-gray-400">Get to know me</h1>
       <Heading title="About Me"/>
@@ -19,7 +24,7 @@ const About = () => {
           <Image
             src={heroImage}
             alt="my image"
-            className="rounded-full h-44 w-44 md:h-60 md:w-60 lg:rounded-none lg:h-96 lg:w-96 "
+            className="rounded-full h-44 w-44 md:h-60 md:w-60 lg:rounded-xl lg:h-96 lg:w-96 "
           />
         </div>
         {/* Content dev */}
@@ -45,8 +50,8 @@ const About = () => {
               </h1>
               <h1>
                 Email:
-                <span className="text-gray-400 pl-4">
-                  oosamamalik9@gmail.com
+                <span className="pl-4 text-green-400">
+                <a href="mailto:oosamamalik9@gmail.com">oosamamalik9@gmail.com</a>
                 </span>
               </h1>
               <h1>
@@ -58,19 +63,22 @@ const About = () => {
             </div>
             <div className="flex flex-col  md:flex-row md:items-center mt-4 gap-4">
               <Button title="Download CV"/>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 ">
                 <span className="w-10 h-0.5 bg-gray-400"></span>
-                <Image src={twitter} alt="twtter" width={24} />
-                <Image src={instagram} alt="twtter" width={24} />
-                <Image src={linkedin} alt="twtter" width={24} />
-                <Image src={github} alt="twtter" width={24} />
-                <Image src={facebook} alt="twtter" width={24} />
+                <Link href="https://twitter.com" target="_blank">
+                  <Image src={twitter} alt="twtter" width={24} className="hover:scale-150 cursor-pointer"/>
+                </Link>
+                <Image src={instagram} alt="twtter" width={24} className="hover:scale-150 cursor-pointer"/>
+                <Image src={linkedin} alt="twtter" width={24} className="hover:scale-150 cursor-pointer"/>
+                <Image src={github} alt="twtter" width={24} className="hover:scale-150 cursor-pointer"/>
+                <Image src={facebook} alt="twtter" width={24} className="hover:scale-150 cursor-pointer"/>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    </>
   );
 };
 export default About;
